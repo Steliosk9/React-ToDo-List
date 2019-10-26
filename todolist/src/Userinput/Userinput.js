@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const userinput = () => {
+const userInput = () => {
 return <input type = "text"/>
 }
 
@@ -12,5 +12,4 @@ return <input type = "text"/>
 
 
 
-
-export default userinput;
+export default userInput;
