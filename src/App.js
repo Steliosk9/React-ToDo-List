@@ -17,4 +17,20 @@ class App extends Component {
     });
   };
 
+  handleSubmit = e => {
+    e.preventDefault();
+    const newItem = {
+      id: this.state.id,
+      title: this.state.item
+    };
+    const updatedItems = [...this.state.items, newItem];
+
+    this.setState({
+      items: updatedItems,
+      item: '',
+      id: uuid(),
+      editItem: false
+    });
+  };
+
 export default App;
