@@ -33,4 +33,10 @@ class App extends Component {
     });
   };
 
+  clearList = () => {
+    this.setState({
+      items: []
+    });
+  };
+
 export default App;
