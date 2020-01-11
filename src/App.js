@@ -39,4 +39,11 @@ class App extends Component {
     });
   };
 
+  handleDelete = id => {
+    const filteredItems = this.state.items.filter(item => item.id !== id);
+    this.setState({
+      items: filteredItems
+    });
+  };
+
 export default App;
